@@ -1,27 +1,42 @@
+requirement.
+Then, give the styling to the app using CSS, add properties like flex, position, and padding to beautify your app project, and give proper formatting, height, width, and color.
+Now it’s time to give functionality to the add note, delete button, and save button. Also, we have to store the notes in the localStorage to save them.
+For Add and Save we have independent functions.
+Example: Here we first design the structure of our project and given styling then we will code for the functionality.
+
+
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" 
+          content="IE=edge">
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0">
     <title>Note App</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
     <div class="btn">
         <div class="heading">
             <h1>Note Taking App</h1>
         </div>
-        <button class="addBtn">
+        <button id="addBtn">
             <i class="fas fa-plus"></i>
             Add Note
         </button>
     </div>
-    <div id="main"></div>
+    <div id="main">
 
+    </div>
     <script src=
-        "https://kit.fontawesome.com/bf520e6492.js" 
+"https://kit.fontawesome.com/bf520e6492.js" 
             crossorigin="anonymous">
       </script>
-      <script src="script.js"></script>
+    <script src="./script.js"></script>
 </body>
+
 </html>
